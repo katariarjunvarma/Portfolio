@@ -1,0 +1,29 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#050816"/>
+  <g opacity="0.45">
+    <path d="M0 126H1200" stroke="#1E293B"/>
+    <path d="M0 252H1200" stroke="#1E293B"/>
+    <path d="M0 378H1200" stroke="#1E293B"/>
+    <path d="M0 504H1200" stroke="#1E293B"/>
+    <path d="M120 0V630" stroke="#1E293B"/>
+    <path d="M240 0V630" stroke="#1E293B"/>
+    <path d="M360 0V630" stroke="#1E293B"/>
+    <path d="M480 0V630" stroke="#1E293B"/>
+    <path d="M600 0V630" stroke="#1E293B"/>
+    <path d="M720 0V630" stroke="#1E293B"/>
+    <path d="M840 0V630" stroke="#1E293B"/>
+    <path d="M960 0V630" stroke="#1E293B"/>
+    <path d="M1080 0V630" stroke="#1E293B"/>
+  </g>
+  <circle cx="930" cy="175" r="190" fill="#818CF8" opacity="0.15"/>
+  <circle cx="280" cy="500" r="160" fill="#6366F1" opacity="0.18"/>
+  <text x="100" y="268" fill="#EEF2FF" font-size="72" font-family="Inter, sans-serif" font-weight="700">
+    Katari Arjun Varma
+  </text>
+  <text x="100" y="336" fill="#A5B4FC" font-size="36" font-family="Inter, sans-serif" font-weight="500">
+    AI &amp; Machine Learning Engineer
+  </text>
+  <text x="100" y="390" fill="#94A3B8" font-size="26" font-family="Inter, sans-serif">
+    Engineering intelligent systems with AI-native thinking.
+  </text>
+</svg>
