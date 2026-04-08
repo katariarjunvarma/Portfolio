@@ -103,15 +103,15 @@ export const workProjects = [
     period: "Oct '25 – Dec '25"
   },
   {
-    name: "Smart Text Editor",
-    tagline: "Desktop text editor with advanced editing features",
+    name: "Air Studio",
+    tagline: "Browser-based gesture-controlled creative drawing app",
     description:
-      "Enhanced a desktop-based text editor with open/save, search with live highlighting, replace popup, undo/redo, theme toggle, and real-time status indicators. Implemented using Python and Tkinter, integrating a scrollable text area, font size selector, and menu-driven UI for clean navigation. Completed as a fully functional GUI editor during hands-on training at Board Infinity.",
-    tech: ["Python", "Tkinter"],
-    image: "/projects/smart-text-editor.png",
-    repo: "https://github.com/katariarjunvarma/TextEditorSmart",
-    demo: "#",
-    period: "Jun '25 – Jul '25"
+      "Built a real-time gesture-controlled drawing application that lets users paint using only their webcam and hand movements. Integrated MediaPipe HandLandmarker for 21-joint hand tracking at ~30fps, with a One-Euro Filter for velocity-adaptive gesture smoothing. Features 6 brush types (Neon, Calligraphy, Spray, Glitter, Gradient) with Catmull-Rom spline interpolation, dual-hand particle effects, and gesture controls for undo, erase, color cycling, and brush switching — all processed 100% on-device.",
+    tech: ["JavaScript", "MediaPipe", "HTML5 Canvas", "Vite"],
+    image: null,
+    repo: "https://github.com/katariarjunvarma/air-studio",
+    demo: "https://fxairstudio.vercel.app",
+    period: "2025"
   }
 ] as const;
 
@@ -400,7 +400,7 @@ export const techStackStrip = [
 ] as const;
 
 export const techUsageByProject: Record<string, string> = {
-  Python: "AV Capitals, CampusOne, Smart Text Editor",
+  Python: "AV Capitals, CampusOne",
   FastAPI: "AV Capitals backend API",
   Django: "CampusOne full campus system",
   OpenCV: "CampusOne face recognition attendance",
@@ -410,7 +410,8 @@ export const techUsageByProject: Record<string, string> = {
   PostgreSQL: "CampusOne production database on Render",
   SQLAlchemy: "AV Capitals ORM layer",
   JWT: "AV Capitals authentication (TOTP 2FA)",
-  Tkinter: "Smart Text Editor GUI"
+  MediaPipe: "Air Studio gesture tracking",
+  "HTML5 Canvas": "Air Studio rendering engine"
 };
 
 export const currentlyExploring = [
@@ -509,13 +510,12 @@ export const projects = [
     image: "/projects/elective.png",
   },
   {
-    name: "Smart Text Editor",
-    description: "Feature-rich desktop text editor with live search and theme toggle.",
-    keywords: ["Python", "Tkinter", "GUI", "Desktop"],
-    tech: ["Python", "Tkinter"],
-    featured: false,
-    // Drop your screenshot here: public/projects/smart-text-editor.png (or .jpg)
-    image: "/projects/smart-text-editor.png",
+    name: "Air Studio",
+    description: "Gesture-controlled drawing app using MediaPipe hand tracking and HTML5 Canvas.",
+    keywords: ["MediaPipe", "Computer Vision", "Gesture", "JavaScript", "Canvas"],
+    tech: ["JavaScript", "MediaPipe", "HTML5 Canvas", "Vite"],
+    featured: true,
+    image: null,
   },
 ] as const;
 
