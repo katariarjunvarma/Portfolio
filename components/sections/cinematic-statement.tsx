@@ -95,17 +95,17 @@ export function CinematicStatement({
 
   return (
     <div ref={sectionRef} className="cinematic-stmt overflow-hidden">
-      <div className="max-w-[1320px] mx-auto px-6">
-        {/* Thin divider line */}
-        <div
-          className="cs-divider h-px bg-border mb-10"
-          style={{ transform: "scaleX(0)", transformOrigin: "left center" }}
-        />
+      {/* Full-width divider line */}
+      <div
+        className="cs-divider w-full h-px bg-border mb-10"
+        style={{ transform: "scaleX(0)", transformOrigin: "left center" }}
+      />
 
+      <div className="max-w-[1320px] mx-auto px-6">
         {/* Optional label */}
         {label && (
           <p
-            className="cs-label text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6"
+            className="cs-label text-xs uppercase tracking-[0.25em] text-primary font-semibold mb-6 text-center"
             style={{ opacity: 0 }}
           >
             {label}
@@ -113,14 +113,14 @@ export function CinematicStatement({
         )}
 
         {/* Giant lines */}
-        <div className="cs-lines">
+        <div className="cs-lines text-center">
           {lines.map((line, i) => (
             <div key={i} className="cs-line-outer overflow-hidden leading-[0.88]">
               <div
                 className={`cs-line-inner font-heading font-bold tracking-tight${
                   accentLast && i === lines.length - 1 ? " text-primary" : ""
                 }`}
-                style={{ fontSize: "clamp(3.8rem, 9.5vw, 9rem)", lineHeight: 0.88 }}
+                style={{ fontSize: "clamp(4.5rem, 11vw, 10.5rem)", lineHeight: 0.92 }}
               >
                 {line}
               </div>
