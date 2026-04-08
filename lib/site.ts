@@ -108,7 +108,7 @@ export const workProjects = [
     description:
       "Built a real-time gesture-controlled drawing application that lets users paint using only their webcam and hand movements. Integrated MediaPipe HandLandmarker for 21-joint hand tracking at ~30fps, with a One-Euro Filter for velocity-adaptive gesture smoothing. Features 6 brush types (Neon, Calligraphy, Spray, Glitter, Gradient) with Catmull-Rom spline interpolation, dual-hand particle effects, and gesture controls for undo, erase, color cycling, and brush switching — all processed 100% on-device.",
     tech: ["JavaScript", "MediaPipe", "HTML5 Canvas", "Vite"],
-    image: null,
+    image: "/projects/air-studio.svg",
     repo: "https://github.com/katariarjunvarma/air-studio",
     demo: "https://fxairstudio.vercel.app",
     period: "2025"
@@ -515,7 +515,7 @@ export const projects = [
     keywords: ["MediaPipe", "Computer Vision", "Gesture", "JavaScript", "Canvas"],
     tech: ["JavaScript", "MediaPipe", "HTML5 Canvas", "Vite"],
     featured: true,
-    image: null,
+    image: "/projects/air-studio.svg",
   },
 ] as const;
 
