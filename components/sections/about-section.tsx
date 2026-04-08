@@ -149,6 +149,8 @@ export function AboutSection() {
           />
           {/* Gradient fade on left */}
           <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-background to-transparent pointer-events-none" />
+          {/* Gradient fade on right */}
+          <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-background to-transparent pointer-events-none" />
           {/* Gradient fade on bottom */}
           <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent pointer-events-none" />
         </div>
@@ -184,9 +186,10 @@ export function AboutSection() {
       </div>
 
       {/* ── Stats ── */}
+      {/* Full-width divider */}
+      <div className="stat-line w-full h-px bg-border" style={{ transformOrigin: "left", transform: "scaleX(0)" }} />
       <div className="max-w-[1320px] mx-auto px-6 pb-[60px] lg:pb-[80px]">
-        <div className="stat-line h-px bg-border mb-8" style={{ transformOrigin: "left", transform: "scaleX(0)" }} />
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-3 gap-8 pt-8">
           {keyMetrics.map((stat, i) => (
             <div key={i} className="text-center">
               <div
